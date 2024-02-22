@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Dados de exemplo
+dados = {
+    'Nome': ['João', 'Maria', 'Carlos', 'Ana'],
+    'Idade': [25, 30, 22, 28],
+    'Gênero': ['Masculino', 'Feminino', 'Masculino', 'Feminino'],
+    'Salário': [50000, 60000, 48000, 55000]
+}
+
+# Criar DataFrame usando pandas
+df = pd.DataFrame(dados)
+
+# Salvar DataFrame como arquivo CSV
+df.to_csv('dataset.csv', index=False)
+
+print("Arquivo CSV 'dataset.csv' criado com sucesso.")
